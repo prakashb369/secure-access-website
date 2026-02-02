@@ -1,0 +1,20 @@
+const role = sessionStorage.getItem("role");
+document.getElementById("title").innerText =
+  role === "admin" ? "Admin Login" : "User Login";
+
+function login(){
+  const u = username.value;
+  const p = password.value;
+  const users = getUsers();
+
+  if(!users[u] || users[u].role !== role){
+    error.innerText = "Invalid login";
+    return;
+  }
+
+  if(users[u].pass === p){
+    location.href = role === "admin" ? "admin.html" : "user.html";
+  } else {
+    error.innerText = "Wrong password";
+  }
+}

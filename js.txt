@@ -1,0 +1,17 @@
+const KEY = "usersDB";
+
+if(!localStorage.getItem(KEY)){
+  localStorage.setItem(KEY, JSON.stringify({
+    admin:{pass:"1234",role:"admin"},
+    prakash:{pass:"2025",role:"user"},
+    student:{pass:"pass@123",role:"user"}
+  }));
+}
+
+function getUsers(){
+  return JSON.parse(localStorage.getItem(KEY));
+}
+
+function saveUsers(u){
+  localStorage.setItem(KEY, JSON.stringify(u));
+}

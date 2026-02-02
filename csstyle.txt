@@ -1,0 +1,29 @@
+body{
+  background:linear-gradient(270deg,#0f2027,#203a43,#2c5364);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-family:Poppins,sans-serif;
+}
+
+.card{
+  background:rgba(255,255,255,.15);
+  padding:30px;
+  border-radius:15px;
+  width:320px;
+  text-align:center;
+}
+
+input,button{
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+}
+
+button{cursor:pointer}
+.logout{background:#ff4b2b}
+.error{color:#ff8080}

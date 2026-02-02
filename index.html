@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure Access</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<h1 class="cinematic">SECURE ACCESS</h1>
+
+<div class="card">
+  <button onclick="go('admin')">Admin Login</button>
+  <button onclick="go('user')">User Login</button>
+</div>
+
+<script>
+function go(role){
+  sessionStorage.setItem("role", role);
+  location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

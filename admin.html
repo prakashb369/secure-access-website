@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<div class="card">
+<h2>Admin Panel</h2>
+
+<input id="newUser" placeholder="Username">
+<input id="newPass" placeholder="Password">
+<button onclick="addUser()">Add User</button>
+
+<ul id="list"></ul>
+
+<button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

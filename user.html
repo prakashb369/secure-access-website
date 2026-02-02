@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<div class="card">
+<h2>Welcome User 🎉</h2>
+<button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script>
+function logout(){
+  sessionStorage.clear();
+  location.href="index.html";
+}
+</script>
+
+</body>
+</html>
